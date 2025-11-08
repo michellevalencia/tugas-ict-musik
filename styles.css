@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #00008B, #630330);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    margin-top: 20px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.title {
+    background: linear-gradient(270deg, #FF00FF, #00FFFF, #BF40BF);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-container:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+
+.card-title {
+    font-weight: bold;
+
+}
+
+.card-structure {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.card-roast {
+    justify-items: center;
+    color: white;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FF00FF;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
