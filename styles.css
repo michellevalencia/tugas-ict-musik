@@ -7,10 +7,11 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(-45deg, #00008B, #630330);
+    background: linear-gradient(-45deg, #6495ED, #FFB6C1);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
     margin-top: 20px;
+    cursor: url('loren-tiger.png') 0 0, auto;
 }
 
 .title-container {
